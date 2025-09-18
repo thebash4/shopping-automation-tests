@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Run All Tests",
+        "type": "debugpy",
+        "request": "launch",
+        "justMyCode": true,
+        "console": "integratedTerminal",
+        "program": "${workspaceFolder}/venv3/bin/pytest",
+        "args": [
+          "-v",
+          "${workspaceFolder}/tests"
+        ],
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}"
+        }
+      },
+      {
+        "name": "Run Current Test File",
+        "type": "debugpy",
+        "request": "launch",
+        "justMyCode": true,
+        "console": "integratedTerminal",
+        "program": "${workspaceFolder}/venv3/bin/pytest",
+        "args": [
+          "-v",
+          "${file}"
+        ],
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}"
+        }
+      }
+    ]
+  }
+  
